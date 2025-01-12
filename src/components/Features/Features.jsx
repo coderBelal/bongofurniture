@@ -43,8 +43,7 @@ export function Features() {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
             }}
-            modules={[Navigation]} // Correctly use the Navigation module
-            className="mySwiper"
+            modules={[Navigation]}  
           >
             {features.map((feature, index) => (
               <SwiperSlide key={index}>
@@ -58,7 +57,7 @@ export function Features() {
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* Custom Navigation Buttons */}
+         
           <div className="swiper-button-prev-custom absolute top-1/2 left-8 transform -translate-y-1/2 text-gray-700 text-2xl cursor-pointer z-10">
             <FaArrowLeft />
           </div>

@@ -9,13 +9,13 @@ export default function Footer() {
           <h2 className="text-2xl md:text-3xl font-bold italic mb-4">
             Discover The Latest Furniture Trends & Exclusive Deals – Stay Updated!
           </h2>
-          <div className="flex max-w-xl mx-auto gap-4">
+          <div className="flex flex-col lg:flex-row max-w-xl mx-auto gap-4">
             <input
               type="email"
               placeholder="Your email address"
               className="flex-1 px-4 py-2 border rounded-md"
             />
-            <button className="px-6 py-2 bg-black text-white rounded-md hover:bg-gray-800">
+            <button className="px-2 py-2 bg-black text-white rounded-md hover:bg-gray-800">
               Subscribe
             </button>
           </div>
