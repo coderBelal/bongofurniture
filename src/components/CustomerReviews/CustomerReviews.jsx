@@ -70,7 +70,7 @@ export default function CustomerReviews() {
             ))}
           </div>
           <p className="text-sm text-muted-foreground">
-            Bongo Furniture was incredible! The quality, style, and durability of the furniture transformed my cafe into a cozy, stylish space. Highly recommend them for anyone needing top-notch furniture and service.
+          Pramanik Furniture  was incredible! The quality, style, and durability of the furniture transformed my cafe into a cozy, stylish space. Highly recommend them for anyone needing top-notch furniture and service.
           </p>
           <p className="font-medium">Sojib</p>
         </div>

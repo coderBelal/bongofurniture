@@ -74,7 +74,7 @@ const ProductSlider = () => {
           slidesPerView: 5,
         },
       }}
-      className="relative group"
+      className="relative "
     >
       {products.map((product) => (
         <SwiperSlide key={product.id}>

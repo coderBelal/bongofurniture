@@ -13,10 +13,10 @@ const navigation = [
 ];
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg border-b border-gray-200">
+    <nav className=" z-50 bg-white shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -27,12 +27,12 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-6">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-900 hover:text-indigo-600 px-3 py-2 text-base font-semibold transition-colors"
+                className="text-gray-900 hover:text-indigo-600 px-3 py-2 text-base  transition-colors"
               >
                 {item.name}
               </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="flex md:hidden">
+          {/* <div className="flex md:hidden">
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
@@ -55,12 +55,12 @@ export default function Navbar() {
                 <FaBars className="block h-6 w-6" aria-hidden="true" />
               )}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Mobile menu */}
-      <div
+      {/* <div
         className={`${isOpen ? 'block' : 'hidden'} md:hidden`}
         id="mobile-menu"
       >
@@ -76,7 +76,7 @@ export default function Navbar() {
             </Link>
           ))}
         </div>
-      </div>
+      </div> */}
     </nav>
   );
 }

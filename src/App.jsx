@@ -10,11 +10,15 @@ import OfficePopularChoice from "./components/OfficePopular/OfficePopular";
 import ProductPage from "./components/ProductPage/ProductPage";
 import ProductSlider from "./components/ProductSlider/ProductSlider";
 import RoomPopular from "./components/RoomPopular/RoomPopular";
+import Header from "./components/Navbar/Header";
+import { useState } from "react";
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <BrowserRouter>
       <div>
+        <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <Navbar />
         <Hero />
         <Features />

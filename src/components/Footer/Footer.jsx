@@ -22,10 +22,10 @@ export default function Footer() {
         </div>
 
         {/* Payment Methods */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <div className="flex flex-wrap justify-center items-center gap-4">
             <span className="text-gray-600 mr-4">Pay With</span>
-            {/* Replace with actual payment method logos */}
+          
             {Array(15).fill(null).map((_, i) => (
               <div key={i} className="w-16 h-10 bg-white rounded-md shadow-sm flex items-center justify-center">
                 <img
@@ -45,28 +45,28 @@ export default function Footer() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 border-t">
           {/* Company Info */}
           <div>
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-11%2018-48-12-9RgShHV60czeidnOhDOMOOeyl9ubR7.png"
-              alt="Bongo Furniture"
-              width={200}
+              src="/pflogo.jpg"
+              alt="Pramanik Furniture "
+              width={80}
               height={80}
               className="mb-4"
             />
-            <p className="text-sm mb-2">F7 (Lift-6), Tower71, ECB Chattar, Matikata Rd Dhaka-1206</p>
+            <p className="text-sm mb-2">Akrain Biruliya Savar, Dhaka, Bangladesh</p>
             <p className="text-sm mb-2">
-              Call us: <p href="tel:+8801710724266" className="hover:underline">+880 1710 - 724266</p>
+              Call us: <p href="tel:+8801710724266" className="hover:underline">+8801733550682</p>
             </p>
             <p className="text-sm mb-4">
-              Email: <p href="mailto:info@bongofurniture.com" className="hover:underline">info@bongofurniture.com</p>
+              Email: <p href="mailto:pramanikfurniture641@gmail.com" className="hover:underline">pramanikfurniture641@gmail.com</p>
             </p>
             <div className="flex gap-4">
-              <FaFacebookF className="w-5 h-5 cursor-pointer hover:text-blue-600" />
+           <a href='https://www.facebook.com/profile.php?id=61571605043376&mibextid=ZbWKwL' target='_blank'> <FaFacebookF  className="w-5 h-5 cursor-pointer hover:text-blue-600" /></a>  
               <FaInstagram className="w-5 h-5 cursor-pointer hover:text-pink-600" />
               <FaPinterestP className="w-5 h-5 cursor-pointer hover:text-red-600" />
               <FaYoutube className="w-5 h-5 cursor-pointer hover:text-red-600" />
@@ -79,7 +79,7 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-4">The Company</h3>
             <ul className="space-y-2">
               {[
-                'About Bongo Furniture',
+                'About Pramanik Furniture ',
                 'License & Certificates',
                 'Privacy Policy',
                 'Return & Refund Policy',
@@ -133,7 +133,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="bg-black text-white py-4 text-center text-sm">
-        <p>© 2024 Bongo Furniture. All Rights Reserved</p>
+        <p>© 2024 Pramanik Furniture. All Rights Reserved</p>
       </div>
     </footer>
   );
