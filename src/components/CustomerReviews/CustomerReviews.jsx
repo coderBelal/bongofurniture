@@ -77,7 +77,7 @@ export default function CustomerReviews() {
       </div>
 
       {/* Quick Actions */}
-      <div className="fixed bottom-4 right-4 flex flex-col gap-2">
+      <div className="fixed bottom-[50%] right-4 flex flex-col gap-2">
         <button className="p-2 bg-white rounded-full shadow-lg hover:bg-gray-50">
           <FaClock className="w-5 h-5" />
         </button>
