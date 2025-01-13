@@ -16,9 +16,9 @@ export default function Navbar() {
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=" z-50 bg-white shadow-lg border-b border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className=" z-50 bg-white hidden md:grid shadow-lg border-b border-gray-200">
+      <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-center items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/">
@@ -32,7 +32,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-900 hover:text-indigo-600 px-3 py-2 text-base  transition-colors"
+                className="text-gray-900 hover:text-teal-600 px-3 py-2 text-base  transition-colors"
               >
                 {item.name}
               </Link>
@@ -44,7 +44,7 @@ export default function Navbar() {
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-indigo-600"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-900 hover:text-teal-600"
               aria-controls="mobile-menu"
               aria-expanded={isOpen ? 'true' : 'false'}
             >
@@ -69,7 +69,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-gray-900 hover:text-indigo-600 block px-3 py-2 text-base font-medium"
+              className="text-gray-900 hover:text-teal-600 block px-3 py-2 text-base font-medium"
               onClick={() => setIsOpen(false)}
             >
               {item.name}

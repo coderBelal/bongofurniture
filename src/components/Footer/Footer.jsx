@@ -66,11 +66,11 @@ export default function Footer() {
               Email: <p href="mailto:pramanikfurniture641@gmail.com" className="hover:underline">pramanikfurniture641@gmail.com</p>
             </p>
             <div className="flex gap-4">
-           <a href='https://www.facebook.com/profile.php?id=61571605043376&mibextid=ZbWKwL' target='_blank'> <FaFacebookF  className="w-5 h-5 cursor-pointer hover:text-blue-600" /></a>  
+           <a href='https://www.facebook.com/profile.php?id=61571605043376&mibextid=ZbWKwL' target='_blank'> <FaFacebookF  className="w-5 h-5 cursor-pointer hover:text-teal-600" /></a>  
               <FaInstagram className="w-5 h-5 cursor-pointer hover:text-pink-600" />
               <FaPinterestP className="w-5 h-5 cursor-pointer hover:text-red-600" />
               <FaYoutube className="w-5 h-5 cursor-pointer hover:text-red-600" />
-              <FaTwitter className="w-5 h-5 cursor-pointer hover:text-blue-400" />
+              <FaTwitter className="w-5 h-5 cursor-pointer hover:text-teal-400" />
             </div>
           </div>
 

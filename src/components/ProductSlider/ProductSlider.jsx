@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
 
 const products = [
   {
@@ -56,7 +57,7 @@ const ProductSlider = () => {
     <div className="px-4 py-8">
     <div className="flex justify-between items-center mb-6">
       <h2 className="text-2xl font-bold">New Products</h2>
-      <a href="#" className="text-blue-600 hover:underline">View All</a>
+      <a href="#" className="text-teal-600 hover:underline">View All</a>
     </div>
   
     <Swiper
@@ -140,11 +141,13 @@ const ProductSlider = () => {
               </div>
   
               {/* Quick Add Button */}
+              <Link to="/productdetails">
               <div
                 className="absolute bottom-0 left-0 right-0 bg-black text-white text-center py-2 opacity-0 translate-y-full group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300"
               >
                 QUICK ADD
               </div>
+              </Link>
             </div>
   
             {/* Product Details */}

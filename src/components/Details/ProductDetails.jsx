@@ -14,6 +14,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules"; 
 import { FaShieldAlt, FaHeadset, FaCreditCard, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import ScrollToTop from "../../hooks/ScrollToTop";
 
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
@@ -106,7 +107,7 @@ const ProductDetails = () => {
       })));
       
   return (
-    <>
+    <ScrollToTop>
     <div className="  p-4 bg-white">
       <div className="grid md:grid-cols-2 gap-8">
         {/* Left Column - Product Image */}
@@ -177,7 +178,7 @@ const ProductDetails = () => {
               onChange={() => setAgreed(!agreed)}
             />
             <label htmlFor="terms" className="text-sm text-gray-600">
-              I agree with <span className="text-blue-500 underline">Terms & Conditions</span>
+              I agree with <span className="text-teal-500 underline">Terms & Conditions</span>
             </label>
           </div>
 
@@ -438,7 +439,7 @@ const ProductDetails = () => {
             ))}
           </Swiper>
         </div>
-    </>
+    </ScrollToTop>
   );
 };
 

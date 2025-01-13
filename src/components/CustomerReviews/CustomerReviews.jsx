@@ -13,9 +13,9 @@ export default function CustomerReviews() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Review 1 */}
+        {/* Review 1 */}    
         <div className="space-y-4">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+          <div className="relative w-full overflow-hidden rounded-lg">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-11%2018-44-20-GqtxxQHbRozFykh0wDJmBXsbNcPa3H.png"
               alt="Office desk setup"
@@ -35,7 +35,7 @@ export default function CustomerReviews() {
 
         {/* Review 2 */}
         <div className="space-y-4">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+          <div className="relative w-full overflow-hidden rounded-lg">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-11%2018-44-20-GqtxxQHbRozFykh0wDJmBXsbNcPa3H.png"
               alt="Cafe interior"
@@ -56,7 +56,7 @@ export default function CustomerReviews() {
 
         {/* Review 3 */}
         <div className="space-y-4">
-          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg">
+          <div className="relative w-full overflow-hidden rounded-lg">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20from%202025-01-11%2018-44-20-GqtxxQHbRozFykh0wDJmBXsbNcPa3H.png"
               alt="Modern cafe interior"

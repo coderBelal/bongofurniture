@@ -21,7 +21,9 @@ const navigation = [
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo and Links for Large Devices */}
         <div className="flex items-center space-x-6">
+          <Link to="/">
           <img src="/pflogo.jpg" alt="BONGO" className="h-6" />
+          </Link>
           <nav className="hidden md:flex space-x-3">
             <a href="#" className="text-gray-600 hover:text-black">
               HELP CENTER

@@ -8,28 +8,28 @@ import { FaShieldAlt, FaHeadset, FaCreditCard, FaArrowLeft, FaArrowRight } from 
 export function Features() {
     const features = [
       {
-        icon: <FaShieldAlt className="text-5xl text-gray-700 mb-4" />,
+        icon: <FaShieldAlt className="text-[40px] text-gray-700 " />,
         title: "Returns & Warranty",
         description:
-          "Buy with confidence! Our products come with a warranty and easy return policy.",
+          "Buy with confidence!",
       },
       {
-        icon: <FaHeadset className="text-5xl text-gray-700 mb-4" />,
+        icon: <FaHeadset className="text-[40px] text-gray-700 " />,
         title: "Customer Support",
         description:
-          "Get help anytime! Our friendly customer support team is here for you.",
+          "Get help anytime!",
       },
       {
-        icon: <FaCreditCard className="text-5xl text-gray-700 mb-4" />,
+        icon: <FaCreditCard className="text-[40px] mt-1 text-gray-700 " />,
         title: "EMI Available",
         description:
-          "Buy now, pay later! Easy monthly installments for up to 12 months on your credit card.",
+          "Buy now, pay later!",
       },
     ];
   
     return (
-      <div className="py-16 relative">
-        <div className=" px-4">
+      <div className="py-5 mx-3 md:py-3 md:mb-7 overflow-hidden border-2 md:border-none bg-white md:shadow-md md:w-10/12 md:mx-auto relative bottom-5">
+        <div className="">
     
           <Swiper
             slidesPerView={1}
@@ -47,12 +47,14 @@ export function Features() {
           >
             {features.map((feature, index) => (
               <SwiperSlide key={index}>
-                <div className="flex bg-white flex-col items-center justify-center rounded-lg shadow-lg p-8 text-center hover:scale-105 transition-transform duration-300 hover:bg-gray-50">
-                  {feature.icon}
-                  <h3 className="text-lg font-bold text-gray-800 mb-4 mt-4">
+                <div className="flex gap-4 bg-white items-center justify-center rounded-lg  py-7 px-4 transition-transform duration-300 text-left">
+                  <div>{feature.icon}</div>
+                  <div>
+                  <h3 className="text-base font-bold text-gray-800 ">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">{feature.description}</p>
+                  <p className="text-gray-600 text-sm ">{feature.description}</p>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

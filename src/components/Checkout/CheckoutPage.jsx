@@ -1,6 +1,7 @@
  
 import { useState } from "react"
 import { InfoIcon } from 'lucide-react'
+import ScrollToTop from "../../hooks/ScrollToTop"
 
 export default function CheckoutPage() {
   const [useShippingAddress, setUseShippingAddress] = useState(true)
@@ -9,7 +10,8 @@ export default function CheckoutPage() {
   const [selectedBilling, setSelectedBilling] = useState('same')
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <ScrollToTop>
+        <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Main Form */}
@@ -18,18 +20,18 @@ export default function CheckoutPage() {
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="text-xl font-semibold">Contact</h2>
-                <button className="text-blue-600 text-sm">Log in</button>
+                <button className="text-teal-600 text-sm">Log in</button>
               </div>
               <input 
                 type="text" 
                 placeholder="Email or mobile phone number"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
               <div className="flex items-center gap-2">
                 <input 
                   type="checkbox" 
                   id="newsletter"
-                  className="w-4 h-4 border-gray-300 rounded focus:ring-blue-500"
+                  className="w-4 h-4 border-gray-300 rounded focus:ring-teal-500"
                 />
                 <label htmlFor="newsletter" className="text-sm">Email me with news and offers</label>
               </div>
@@ -40,7 +42,7 @@ export default function CheckoutPage() {
               <h2 className="text-xl font-semibold">Delivery</h2>
               <select 
                 defaultValue="bangladesh" 
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               >
                 <option value="bangladesh">Bangladesh</option>
               </select>
@@ -48,42 +50,42 @@ export default function CheckoutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <input 
                   placeholder="First name"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
                 <input 
                   placeholder="Last name"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
               </div>
               
               <input 
                 placeholder="Company (optional)"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
               <input 
                 placeholder="Address"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
               <input 
                 placeholder="Apartment, suite, etc. (optional)"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
               
               <div className="grid grid-cols-2 gap-4">
                 <input 
                   placeholder="City"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
                 <input 
                   placeholder="Postal code (optional)"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
               </div>
               
               <div className="flex items-center gap-2">
                 <input 
                   placeholder="Phone"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
                 <InfoIcon className="h-5 w-5 text-gray-400" />
               </div>
@@ -92,7 +94,7 @@ export default function CheckoutPage() {
                 <input 
                   type="checkbox" 
                   id="save-info"
-                  className="w-4 h-4 border-gray-300 rounded focus:ring-blue-500"
+                  className="w-4 h-4 border-gray-300 rounded focus:ring-teal-500"
                 />
                 <label htmlFor="save-info" className="text-sm">Save this information for next time</label>
               </div>
@@ -109,7 +111,7 @@ export default function CheckoutPage() {
                     name="shipping"
                     value="standard"
                     checked={selectedShipping === 'standard'}
-                    className="w-4 h-4 border-gray-300 focus:ring-blue-500"
+                    className="w-4 h-4 border-gray-300 focus:ring-teal-500"
                   />
                   <label htmlFor="standard">Delivery Charge</label>
                 </div>
@@ -130,7 +132,7 @@ export default function CheckoutPage() {
                     name="payment"
                     value="partial"
                     checked={selectedPayment === 'partial'}
-                    className="w-4 h-4 border-gray-300 focus:ring-blue-500"
+                    className="w-4 h-4 border-gray-300 focus:ring-teal-500"
                   />
                   <label htmlFor="partial">Partial Cash on delivery</label>
                 </div>
@@ -167,7 +169,7 @@ export default function CheckoutPage() {
                       setSelectedBilling(e.target.value)
                       setUseShippingAddress(true)
                     }}
-                    className="w-4 h-4 border-gray-300 focus:ring-blue-500"
+                    className="w-4 h-4 border-gray-300 focus:ring-teal-500"
                   />
                   <label htmlFor="same">Same as shipping address</label>
                 </div>
@@ -182,14 +184,14 @@ export default function CheckoutPage() {
                       setSelectedBilling(e.target.value)
                       setUseShippingAddress(false)
                     }}
-                    className="w-4 h-4 border-gray-300 focus:ring-blue-500"
+                    className="w-4 h-4 border-gray-300 focus:ring-teal-500"
                   />
                   <label htmlFor="different">Use a different billing address</label>
                 </div>
               </div>
             </div>
 
-            <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-md font-medium">
+            <button className="w-full bg-teal-600 hover:bg-teal-700 text-white py-4 rounded-md font-medium">
               Complete order
             </button>
           </div>
@@ -233,7 +235,7 @@ export default function CheckoutPage() {
         </div>
 
         {/* Footer Links */}
-        <div className="  gap-4 justify-center grid grid-cols-3 text-sm text-blue-600 mt-8">
+        <div className="  gap-4 justify-center grid grid-cols-3 text-sm text-teal-600 mt-8">
           <a href="#" className="hover:underline">Refund policy</a>
           <a href="#" className="hover:underline">Shipping policy</a>
           <a href="#" className="hover:underline">Privacy policy</a>
@@ -242,6 +244,7 @@ export default function CheckoutPage() {
         </div>
       </div>
     </div>
+    </ScrollToTop>
   )
 }
 
