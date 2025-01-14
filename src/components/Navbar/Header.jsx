@@ -25,12 +25,12 @@ const navigation = [
           <img src="/pflogo.jpg" alt="BONGO" className="h-6" />
           </Link>
           <nav className="hidden md:flex space-x-3">
-            <a href="#" className="text-gray-600 hover:text-black">
+            <Link to="/page/helpcenter" className="text-gray-600 hover:text-black">
               HELP CENTER
-            </a>
-            {/* <a href="#" className="text-gray-600 hover:text-black">
+            </Link>
+            <Link  to="/page/contactus" className="text-gray-600 hover:text-black">
               CONTACT US
-            </a> */}
+            </Link>
             <a href="#" className="text-gray-600 hover:text-black">
               MEETING REQUEST
             </a>
@@ -50,20 +50,25 @@ const navigation = [
         </div>
 
         {/* Icons */}
-        <div className="flex items-center space-x-6">
-          <button className="text-gray-600">
-            <FaUser />
-          </button>
-          <button className="text-gray-600">
-            <FaHeart />
-          </button>
-          <button className="relative text-gray-600">
-           <FaShoppingBag />
-            <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
-              0
-            </span>
-          </button>
-        </div>
+        <div className="flex items-center space-x-8">
+  <button className="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
+    <Link to="/page/login">
+      <FaUser />
+    </Link>
+  </button>
+  
+  <button className="text-gray-600 hover:text-blue-500 transition-colors duration-300">
+    <FaHeart />
+  </button>
+  
+  <button className="relative text-gray-600 hover:text-blue-500 transition-colors duration-300">
+    <FaShoppingBag />
+    <span className="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full h-5 w-5 flex items-center justify-center text-sm">
+      0
+    </span>
+  </button>
+</div>
+
 
         {/* Hamburger Menu for Small Devices */}
          <div className="flex md:hidden">

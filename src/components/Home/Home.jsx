@@ -8,7 +8,7 @@ import ChairPopular from '../ChairPopular/ChairPopular';
 import ProductPage from '../ProductPage/ProductPage';
 import ProductSlider from '../ProductSlider/ProductSlider';
 import CustomerReviews from '../CustomerReviews/CustomerReviews';
-
+ 
 const Home = () => {
     return (
         <div>
@@ -21,6 +21,7 @@ const Home = () => {
               <ProductPage />
               <ProductSlider />
               <CustomerReviews />
+        
         </div>
     );
 };
