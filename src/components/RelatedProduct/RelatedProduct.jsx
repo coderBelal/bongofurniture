@@ -58,12 +58,12 @@ const products = [
   isNew: true,
 })));
 
-const ProductSlider = () => {
+const  RelatedProduct = () => {
   return (
     <div className="px-4 py-8">
     <div className="flex justify-between items-center mb-6">
-      <h2 className="text-2xl font-bold">New Products</h2>
-      <a href="#" className="text-teal-600 hover:underline">View All</a>
+      <h2 className="text-3xl text-center font-bold">Related Products</h2>
+ 
     </div>
   
     <Swiper
@@ -181,4 +181,4 @@ const ProductSlider = () => {
   );
 };
 
-export default ProductSlider;
+export default  RelatedProduct;

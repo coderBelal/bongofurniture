@@ -1,34 +1,34 @@
 import React, { useState } from "react";
  
 const RoomPopular = () => {
-    const officeProducts = [
-        {
-          id: 1,
-          title: "Boss Table",
-          image: "https://i.postimg.cc/Hx7zPHXX/Bed-785x.jpg",
-          gridClass: "col-span-2 row-span-2"
-        },
-        {
-          id: 2,
-          title: "CEO Desk",
-          image: "https://i.postimg.cc/Hx7zPHXX/Bed-785x.jpg",
-        },
-        {
-          id: 3,
-          title: "WorkStation",
-          image: "https://i.postimg.cc/Hx7zPHXX/Bed-785x.jpg",
-        },
-        {
-          id: 4,
-          title: "Executive Desk",
-          image: "https://i.postimg.cc/Hx7zPHXX/Bed-785x.jpg",
-        },
-        {
-          id: 5,
-          title: "Conference Table",
-          image: "https://i.postimg.cc/Hx7zPHXX/Bed-785x.jpg",
-        }
-      ];
+    const officeProducts =  [
+      {
+        id: 1,
+        title: "Boss Table",
+        image: "https://i.postimg.cc/jq73M64m/Boss-Table-785x.jpg",
+        gridClass: "col-span-2 row-span-2"
+      },
+      {
+        id: 2,
+        title: "CEO Desk",
+        image: "https://i.postimg.cc/vmhv57P3/10c4ed96-5200-4514-999d-eca8a87e09cf.jpg",
+      },
+      {
+        id: 3,
+        title: "WorkStation",
+        image: "https://i.postimg.cc/wMycKC9G/2ae7f078-0899-4cc5-ae08-a8ee33dc1930.jpg",
+      },
+      {
+        id: 4,
+        title: "Executive Desk",
+        image: "https://i.postimg.cc/y8qnK8gX/63257b1f-05f0-4e86-a6d9-2229d51425cb.jpg",
+      },
+      {
+        id: 5,
+        title: "Conference Table",
+        image: "https://i.postimg.cc/qRZX5JHK/8c0e6a04-d906-465e-8d0f-fa6e9ee494bb.jpg",
+      }
+    ];
  const [hoveredId, setHoveredId] = useState(null);
   return (
     <div className="px-4 py-8">
